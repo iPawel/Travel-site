@@ -1,0 +1,46 @@
+.destinations {
+
+
+    &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin-top: 3rem;
+
+    @include largeMobile {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    @include largeTablet {
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+    &__card {
+        position: relative;
+
+
+
+        & img {
+            height: 70vh;
+            border-radius: 20px;
+        }
+    }
+
+    &__txt {
+        position: absolute;
+        bottom: 7%;
+    }
+
+    &__p {
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: $brown-color;
+        margin-left: 1rem;
+    }
+    
+
+
+}

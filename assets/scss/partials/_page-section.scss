@@ -1,0 +1,9 @@
+.page-section {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    @include largeTablet {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    }
+}

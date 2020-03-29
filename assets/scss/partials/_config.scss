@@ -1,0 +1,40 @@
+$gray-color: rgb(141, 138, 138);
+$brown-color: rgb(233, 116, 20);
+
+
+
+//  Mixins ----------------------------
+
+@mixin pseudo ($position: absolute, $content: "", $display: block) {
+    position: $position;
+    content: $content;
+    display: $display;
+}
+
+
+
+//  Media Querys  ---------------------
+
+@mixin largeMobile {
+    @media (min-width: 530px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin largeTablet {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}

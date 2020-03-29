@@ -4,50 +4,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600|Playfair+Display:400,600,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Travel-site</title>
 </head>
 
 <body>
     <header class="header">
-        <nav class="nav">
-            <div class="logo">
-                <h1 class="logo__content">TravelliT</h1>
-            </div>
-            <ul class="manu">
-                <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Explore</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Travel</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-            </ul>
-        </nav>
-        <div class="header__content">
-            <h1 class="header__title">Let's Make Your Best Trip Ever</h1>
-            <p class="header__txt">The best travel for your journey respectful of the environment</p>
+        <div class="burger">
+            <span class="burger__icon"></span>
         </div>
-        <div class="search">
-            <div class="search__content">
-                <h2 class="search__title">One Way</h2>
+        <div class="wrapper">
+            <nav class="nav">
+                <div class="logo">
+                    <h1 class="logo__content">TravelliT</h1>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Explore</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Travel</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="header__content">
+                <h1 class="header__title">Let's Make Your Best Trip Ever</h1>
+                <p class="header__txt">The best travel for your journey respectful of the environment</p>
+                <button class="btn btn--till-desktop">Book Now</button>
+            </div>
+            <div class="search">
+                <h2 class="search__title">Book Now</h2>
                 <div class="search__content">
-                    <div class="search__from">
-                        <label for="from">From</label>
-                        <input type="text" id="from" placeholder="Country">
+                    <div class="search__card">
+                        <label class="search__label" for="from">From</label>
+                        <input class="search__input" type="text" id="from" placeholder="Country">
                     </div>
-                    <div class="search__to">
-                        <label for="to">To</label>
-                        <input type="text" id="to" placeholder="Country">
+                    <div class="search__card">
+                        <label class="search__label" for="to">To</label>
+                        <input class="search__input" type="text" id="to" placeholder="Country">
                     </div>
-                    <div class="search__date">
-                        <label for="date">Expected date</label>
-                        <input type="date" id="date">
+                    <div class="search__card">
+                        <label class="search__label" for="date">Expected date</label>
+                        <input class="search__input" type="date" id="date">
                     </div>
                     <button class="btn">Search</button>
-
                 </div>
             </div>
         </div>
     </header>
+    <main>
 
+        <!--  Destinations -------------- -->
+        <div class="page-section destinations">
+            <div class="wrapper">
+                <div class="generic-content-container">
+                    <h1 class="headline headline--underline-left">Popular Destinations</h1>
+                    <p>From historical cities to splendours, come see the best of world!!</p>
+                </div>
+                <div class="destinations__container">
+                    <div class="destinations__card">
+                        <img src="./assets/images/Australia-400.jpg" alt="surfing board on the beach">
+                        <div class="destinations__txt">
+                            <p class="destinations__p">Copacabana</p>
+                            <p class="destinations__p">New South Wales, Australia</p>
+                        </div>
+                    </div>
+                    <div class="destinations__card">
+                        <img src="./assets/images/mountain-400.jpg" alt="view of the mountain">
+                        <div class="destinations__txt">
+                            <p class="destinations__p">Kilimanjaro</p>
+                            <p class="destinations__p">Tanzania, Africa</p>
+                        </div>
+                    </div>
+                    <div class="destinations__card">
+                        <img src="./assets/images/Lake-400.jpg" alt="body of lake wather and trees">
+                        <div class="destinations__txt">
+                            <p class="destinations__p">Kuta Beach</p>
+                            <p class="destinations__p">Bali, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Offers ---------------------------- -->
+        <div class="page-section offers">
+            <div class="wrapper">
+                <div class="generic-content-container generic-content-container--centered">
+                    <h1 class="headline headline--underline-centered">Special offers</h1>
+                    <p>Check out our special offers tour</p>
+                </div>
+                <div class="offers__container">
+                    <div class="offers__card">
+                        <img class="offers__img" src="./assets/images/bali-400.jpg" alt="">
+                        <div class="offers__content">
+                            <h2 class="headline headline--black headline--small">Bali, Indonesia</h2>
+                            <div class="offers__stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="offers__pricing">
+                                <span class="offers__txt">from<span class="offers__price">$1000</span></span>
+                                <button class="btn btn--small">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offers__card">
+                        <img class="offers__img" src="./assets/images/london-400.jpg" alt="">
+                        <div class="offers__content">
+                            <h2 class="headline headline--black headline--small">London, United Kingdom</h2>
+                            <div class="offers__stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="offers__pricing">
+                                <span class="offers__txt">from<span class="offers__price">$400</span></span>
+                                <button class="btn btn--small">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offers__card">
+                        <img class="offers__img" src="./assets/images/colorado-400.jpg" alt="">
+                        <div class="offers__content">
+                            <h2 class="headline headline--black headline--small">Colorado, United States</h2>
+                            <div class="offers__stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="offers__pricing">
+                                <span class="offers__txt">from<span class="offers__price">$600</span></span>
+                                <button class="btn btn--small">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog ------------------------ -->
+        <div class="page-section blog">
+            <div class="wrapper">
+                <div class="generic-content-container generic-content-container--centered">
+                    <h1 class="headline headline--underline-centered">Our Blogs</h1>
+                    <p>An insight to the incredible experiences in the world</p>
+                </div>
+                <div class="blog__container">
+                    <article class="blog__main">
+                        <img src="./assets/images/bali-blog-400.jpg" alt="" class="blog__img">
+                        <div class="generic-content-container">
+                            <h2 class="headline headline--black headline--small headline--margin-top">Wonderful Bali!
+                                Try new experiences in
+                                there!</h2>
+                            <p>Bali is one of the most famous island in the Indonesian archipelago. The island's home to
+                                an
+                                ancient culture that's known for it's warm hospitality. Bali has something to offer a
+                                very
+                                broad market of visitors from young back-packers right through to the super-rich.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </article>
+                    <!-- Blog Aside ------------------------ -->
+                    <aside class="blog__aside">
+                        <div class="blog__card">
+                            <img src="./assets/images/venice-300.jpg" alt="" class="blog__img">
+                            <div
+                                class="generic-content-container generic-content-container--margin-left-from-largeMobile">
+                                <h2 class="headline headline--black headline--small">Beautiful Italy. Let's travelling!
+                                </h2>
+                                <p>Italy is one of the most popular vacation destinations in the world, and it's no
+                                    wonder.
+                                </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="blog__card">
+                            <img src="./assets/images/eiffel-300.jpg" alt="" class="blog__img">
+                            <div
+                                class="generic-content-container generic-content-container--margin-left-from-largeMobile">
+                                <h2 class="headline headline--black headline--small">Romantic moments under Eiffel Tower
+                                </h2>
+                                <p>The Eiffel Tower is best background for a romantic Paris honeymoon portrait.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="blog__card">
+                            <img src="./assets/images/desert-300.jpg" alt="" class="blog__img">
+                            <div
+                                class="generic-content-container generic-content-container--margin-left-from-largeMobile">
+                                <h2 class="headline headline--black headline--small">New experience on desert island
+                                    with
+                                    your friends</h2>
+                                <p>The desert island hangs in our global pop culture.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="page-section">
+        <div class="wrapper">
+            <!--  Gallery ---------------------------- -->
+            <div class="gallery">
+                <div class="generic-content-container">
+                    <h1 class="headline headline--underline-left">Destination Gallery</h1>
+                    <p>Our photos gallery on trip</p>
+                </div>
+                <div class="gallery__container">
+                    <img src="./assets/images/gallery-2.jpg" alt="" class="gallery__img">
+                    <img src="./assets/images/gallery-1.jpg" alt="" class="gallery__img">
+                    <img src="./assets/images/gallery-3.jpg" alt="" class="gallery__img">
+                    <img src="./assets/images/gallery-4.jpg" alt="" class="gallery__img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper wrapper--relative">
+            <!--  Subscribe --------------------------------- -->
+            <div class="subscribe">
+                <h1 class="headline headline--small-until-largeTablet">Our Newsletter</h1>
+                <div class="subscribe__input-container">
+                    <label class="subscribe__label" for="email">Enter your email</label>
+                    <input class="subscribe__input" type="email" id="email" placeholder="example@email.com">
+                </div>
+                <button class="btn">Subscribe</button>
+            </div>
+            <div class="page-section">
+                <nav class="footer__nav">
+                    <div class="social">
+                        <a>
+                            <h1 class="logo__content">TravelliT</h1>
+                        </a>
+                        <a><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                    <ul class="footer__list">
+                        <h3 class="footer__subtitle">Information</h3>
+                        <li class="footer__item"><a href="" class="footer__link">Home</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Explore</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Travel</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Blog</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <h3 class="footer__subtitle">Helpfull links</h3>
+                        <li class="footer__item"><a href="" class="footer__link">Destinations</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Supports</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Terms & Conditions</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Privacy</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <h3 class="footer__subtitle">Contact</h3>
+                        <li class="footer__item"><a href="+44 207344111" class="contact__phone">+44207344111</a></li>
+                        <li class="footer__item"><a href="" class="contact__email">info@travelliT.com</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </footer>
+    <script src="./assets/scripts/mobile-menu.js"></script>
 </body>
 
 </html>

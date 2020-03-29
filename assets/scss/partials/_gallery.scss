@@ -1,0 +1,40 @@
+.gallery {
+    margin-bottom: 6rem;
+    
+
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        margin-top: 3rem;
+
+        @include largeMobile {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+
+        @include largeTablet {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0;
+    }
+}
+
+    &  img {
+        height: 460px;
+        box-shadow: 2px 2px 5px gray;
+        
+
+            @include largeTablet {
+            &:nth-child(1) {
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+
+            &:nth-child(4) {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+    }
+}

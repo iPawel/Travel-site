@@ -1,0 +1,42 @@
+.footer {
+    width: 100%;
+    // margin-top: 1rem;
+    background-color: $gray-color;
+    color: white;
+
+    @include largeTablet {
+    position: relative;
+    margin-top: 6rem;
+    }
+
+
+    &__nav {
+        display: grid;
+        grid-gap: 2rem;
+
+        @include largeMobile {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include largeTablet {
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 5rem;
+        }
+
+
+        & i {
+            font-size: 2rem;
+            margin-top: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__item {
+        margin-bottom: .5rem;
+    }
+}
