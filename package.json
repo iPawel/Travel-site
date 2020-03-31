@@ -1,0 +1,19 @@
+{
+  "name": "travel-site",
+  "version": "1.0.0",
+  "description": "Travel site project. Tech stack  HTML, CSS, SASS, JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iPawel/Travel-site.git"
+  },
+  "author": "Pawel Bil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iPawel/Travel-site/issues"
+  },
+  "homepage": "https://github.com/iPawel/Travel-site#readme"
+}
