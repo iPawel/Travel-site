@@ -5,11 +5,24 @@
     display: grid;
     grid-gap: 2rem;
 
+
     @include largeTablet {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 3rem;
     }
 }
+
+    &__main {
+        display: grid;
+
+        @include tablet {
+            grid-template-columns: 1fr 2fr;
+        }
+
+        @include largeTablet {
+            grid-template-columns: 1fr;
+        }
+    }
 
 
     &__aside {

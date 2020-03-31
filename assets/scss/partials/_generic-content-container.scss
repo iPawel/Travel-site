@@ -12,6 +12,20 @@
     }
 
 
+    &--margin-left-tablet {
+
+        margin-left: 0;
+        
+        
+        @include tablet {
+            margin-left: 2rem;
+            }
+
+        @include largeTablet {
+            margin-left: 0;
+            }
+    }
+
 
     & p {
         font-size: 1.1rem;

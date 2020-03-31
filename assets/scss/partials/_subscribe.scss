@@ -56,7 +56,7 @@
 
         &:focus {
             background-color: rgba($brown-color, .1);
-            color: white;
+            color: black;
 
             @include largeTablet {
                 background-color: rgba($brown-color, .1);
