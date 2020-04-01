@@ -65,21 +65,21 @@
                 </div>
                 <div class="destinations__container">
                     <div class="destinations__card">
-                        <img src="./assets/images/Australia-400.jpg" alt="surfing board on the beach">
+                        <img class="lazyload" data-src="./assets/images/Australia-400.jpg" alt="surfing board on the beach">
                         <div class="destinations__txt">
                             <p class="destinations__p">Copacabana</p>
                             <p class="destinations__p">New South Wales, Australia</p>
                         </div>
                     </div>
                     <div class="destinations__card">
-                        <img src="./assets/images/mountain-400.jpg" alt="view of the mountain">
+                        <img class="lazyload" data-src="./assets/images/mountain-400.jpg" alt="view of the mountain">
                         <div class="destinations__txt">
                             <p class="destinations__p">Kilimanjaro</p>
                             <p class="destinations__p">Tanzania, Africa</p>
                         </div>
                     </div>
                     <div class="destinations__card">
-                        <img src="./assets/images/Lake-400.jpg" alt="body of lake wather and trees">
+                        <img class="lazyload" data-src="./assets/images/Lake-400.jpg" alt="body of lake wather and trees">
                         <div class="destinations__txt">
                             <p class="destinations__p">Kuta Beach</p>
                             <p class="destinations__p">Bali, Indonesia</p>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="offers__container">
                     <div class="offers__card">
-                        <img class="offers__img" src="./assets/images/bali-400.jpg" alt="">
+                        <img class="lazyload offers__img" data-src="./assets/images/bali-400.jpg" alt="people in the pool in Bali in Indonesia">
                         <div class="offers__content">
                             <h2 class="headline headline--black headline--small">Bali, Indonesia</h2>
                             <div class="offers__stars">
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <div class="offers__card">
-                        <img class="offers__img" src="./assets/images/london-400.jpg" alt="">
+                        <img class="lazyload offers__img" data-src="./assets/images/london-400.jpg" alt="London bridge">
                         <div class="offers__content">
                             <h2 class="headline headline--black headline--small">London, United Kingdom</h2>
                             <div class="offers__stars">
@@ -131,7 +131,7 @@
                         </div>
                     </div>
                     <div class="offers__card">
-                        <img class="offers__img" src="./assets/images/colorado-400.jpg" alt="">
+                        <img class="lazyload offers__img" data-src="./assets/images/colorado-400.jpg" alt="man watching a canion in Colorado">
                         <div class="offers__content">
                             <h2 class="headline headline--black headline--small">Colorado, United States</h2>
                             <div class="offers__stars">
@@ -160,8 +160,8 @@
                 <div class="blog__container">
                     <article class="blog__main">
                         <picture>
-                            <source srcset="./assets/images/bali-portrait.jpg" media="(min-width:768px)">
-                            <img src="./assets/images/bali-blog-400.jpg" alt="" class="blog__img">
+                            <source class="lazyload" data-srcset="./assets/images/bali-portrait.jpg" media="(min-width:768px)">
+                            <img class="lazyload blog__img" data-src="./assets/images/bali-blog-400.jpg" alt="Image of a Bali tourist attraction">
                         </picture>
                         <div class="generic-content-container generic-content-container--margin-left-tablet">
                             <h2 class="headline headline--black headline--small headline--margin-top">Wonderful Bali!
@@ -178,7 +178,7 @@
                     <!-- Blog Aside ------------------------ -->
                     <aside class="blog__aside">
                         <div class="blog__card">
-                            <img src="./assets/images/venice-300.jpg" alt="" class="blog__img">
+                            <img class="lazyload blog__img" data-src="./assets/images/venice-300.jpg" alt="boat on the water in Venice">
                             <div
                                 class="generic-content-container generic-content-container--margin-left-from-largeMobile">
                                 <h2 class="headline headline--black headline--small">Beautiful Italy. Let's travelling!
@@ -190,7 +190,7 @@
                             </div>
                         </div>
                         <div class="blog__card">
-                            <img src="./assets/images/eiffel-300.jpg" alt="" class="blog__img">
+                            <img class="lazyload blog__img" data-src="./assets/images/eiffel-300.jpg" alt="Picture of an Eiffel tower in Paris">
                             <div
                                 class="generic-content-container generic-content-container--margin-left-from-largeMobile">
                                 <h2 class="headline headline--black headline--small">Romantic moments under Eiffel Tower
@@ -200,7 +200,7 @@
                             </div>
                         </div>
                         <div class="blog__card">
-                            <img src="./assets/images/desert-300.jpg" alt="" class="blog__img">
+                            <img class="lazyload blog__img" data-src="./assets/images/desert-300.jpg" alt="Picture of a desert">
                             <div
                                 class="generic-content-container generic-content-container--margin-left-from-largeMobile">
                                 <h2 class="headline headline--black headline--small">New experience on desert island
@@ -224,10 +224,10 @@
                     <p>Our photos gallery on trip</p>
                 </div>
                 <div class="gallery__container">
-                    <img src="./assets/images/gallery-2.jpg" alt="" class="gallery__img">
-                    <img src="./assets/images/gallery-1.jpg" alt="" class="gallery__img">
-                    <img src="./assets/images/gallery-3.jpg" alt="" class="gallery__img">
-                    <img src="./assets/images/gallery-4.jpg" alt="" class="gallery__img">
+                    <img class="lazyload gallery__img" data-src="./assets/images/gallery-2.jpg" alt="man walking on the desert">
+                    <img class="lazyload gallery__img" data-src="./assets/images/gallery-1.jpg" alt="village and the mountain">
+                    <img class="lazyload gallery__img" data-src="./assets/images/gallery-3.jpg" alt="house by the sea">
+                    <img class="lazyload gallery__img" data-src="./assets/images/gallery-4.jpg" alt="palm trees and a green field">
                 </div>
             </div>
         </div>
@@ -275,6 +275,7 @@
                 </nav>
             </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
     <script src="./assets/scripts/mobile-menu.js"></script>
 </body>
 
